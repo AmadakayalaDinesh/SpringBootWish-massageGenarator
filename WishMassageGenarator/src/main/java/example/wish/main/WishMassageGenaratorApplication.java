@@ -25,6 +25,7 @@ public class WishMassageGenaratorApplication {
 		//Invoke The B Method
 	            String hp= genarator.Wishing("BHUVANESWARI");
 	     System.out.println("Result:"+hp);
+		System.out.print("D3eghvghaagza");
 	     //Continer Close
 	     ((ConfigurableApplicationContext) ctx).close();
 	}
