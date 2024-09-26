@@ -1,5 +1,7 @@
 package example.wish.main;
 
+import java.io.IOException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -18,14 +20,14 @@ public class WishMassageGenaratorApplication {
 	}
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		ApplicationContext ctx=SpringApplication.run(WishMassageGenaratorApplication.class, args);
 		//Get The Targett Class Obj
 		WishMassage genarator=ctx.getBean("wmg",WishMassage.class);
 		//Invoke The B Method
 	            String hp= genarator.Wishing("BHUVANESWARI");
 	     System.out.println("Result:"+hp);
-		System.out.print("D3eghvghaagza");
+	     System.out.write("Helo Demo".getBytes());
 	     //Continer Close
 	     ((ConfigurableApplicationContext) ctx).close();
 	}
