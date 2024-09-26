@@ -26,7 +26,6 @@ public class WishMassageGenaratorApplication {
 		WishMassage genarator=ctx.getBean("wmg",WishMassage.class);
 		//Invoke The B Method
 	            String hp= genarator.Wishing("BHUVANESWARI");
-	            System.out.write("Hello Don".getBytes());
 	     System.out.println("Result:"+hp);
 	     ((ConfigurableApplicationContext) ctx).close();
 	}
